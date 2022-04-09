@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Wrap the entire screen-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pizzapartyfragment"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!--    "Number of People?" TextView-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="@string/number_of_people"/>
+
+    <!--    Number of people EditText-->
+    <EditText
+        android:id="@+id/num_people_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Number of People"
+        android:inputType="number"
+        android:minWidth="60dp"/>
+
+    <!--    "How Hungry?" TextView-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:text="@string/how_hungry" />
+
+    <!--    RadioButton Group Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--        Group of Radio Buttons-->
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--            Individal Radio Buttons-->
+            <RadioButton
+                android:id="@+id/radio_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/light_button"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/radio_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medium_button"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/radio_ravenous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ravenous_button"
+                android:textSize="15sp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <!--    "Calculate!" Button-->
+    <Button
+        android:id="@+id/calc_pizza_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/btn"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:text="@string/calc_button"
+        android:textSize="18sp"/>
+
+    <!--    "Total Pizzas Needed:        <calculation>" TextViews-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/total_pizzas"/>
+
+        <!--        This is where the # of pizzas will be-->
+        <TextView
+            android:id="@+id/total_pizzas_needed_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:gravity="end"
+            android:text="@string/total_pizzas_needed"/>
+
+    </LinearLayout>
+
+
+    <!--    "Cost Per Pizza:         <input>" Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cost_per_pizza_linear_layout"
+        android:visibility="invisible"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cost_per_pizza_textview"
+            android:textSize="24sp"
+            android:text="@string/pizza_cost"
+            android:layout_gravity="start"/>
+
+        <EditText
+            android:id="@+id/cost_per_pizza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_gravity="end"
+            android:text="@string/cost_per_pizza_edittext"
+            android:textSize="24sp"
+            android:gravity="end"/>
+
+    </LinearLayout>
+
+    <!--    "REFRESH COST" Button-->
+    <Button
+        android:id="@+id/refresh_cost_button"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/btn"
+        android:textColor="@color/black"
+        android:text="@string/refresh_button"
+        android:textSize="18sp"/>
+
+    <!--    "Total Cost:        <calculation>" Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_cost_of_pizza"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp"
+            android:text="@string/total_cost"/>
+
+        <TextView
+            android:id="@+id/total_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="end"
+            android:textSize="24sp"
+            android:text="@string/total_pizzas_needed"/>
+
+    </LinearLayout>
+</LinearLayout>

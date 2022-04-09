@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">christopherwilhoite_A1</string>
+    <string name="number_of_people">Number of People?</string>
+    <string name="how_hungry">How Hungry?</string>
+    <string name="light_button">Light</string>
+    <string name="medium_button">Medium</string>
+    <string name="ravenous_button">Ravenous</string>
+    <string name="calc_button">CALCULATE!</string>
+    <string name="total_pizzas">Total Pizzas Needed:</string>
+    <string name="pizza_cost">Cost Per Pizza:</string>
+    <string name="cost_per_pizza_edittext">5.55</string>
+    <string name="refresh_button">REFRESH COST</string>
+    <string name="total_cost">Total Cost</string>
+    <string name="pizza_banner">PizzaParty4k</string>
+    <string name="total_pizzas_needed"></string>
+</resources>
